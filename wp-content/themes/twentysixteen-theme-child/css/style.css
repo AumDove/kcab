@@ -12,3 +12,10 @@
 
 	
 @import url("../twentysixteen/style.css");
+
+
+body {
+	background:url("../img/maui-upcountry.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size:cover;
+}
