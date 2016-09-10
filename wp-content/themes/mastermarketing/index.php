@@ -10,8 +10,8 @@
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty_Sixteen 1.0
+ * @subpackage mastermarketing
+ * @since mastermarketing 1.0
  */
 
 get_header(); ?>
@@ -25,7 +25,7 @@ get_header(); ?>
 		<?php endif; ?>
 	</div>
 	
-	<?php get_sidebar(); ?>
+	<?php get_sidebar(); ?> 
 	<?php if ( have_posts() ): ?>
 		<div id="navigation" class="container">
 			<div class="left"><?php next_posts_link('&larr; <span>Older Posts</span>'); ?></div>
