@@ -413,30 +413,29 @@ h3.entry-time {
 .page-header a {
 	text-decoration: none;
 }
-.top-logo {
+.page-header .top-logo {
 	color: inherit;
 	float: left;
 }
-.title {
+.page-header .top-logo .title {
 	color: #45ac9d;
 	font: bold 1.88em/1.3125 'Montserrat', 'OpenSans', Arial, sans-serif;
 	letter-spacing: -0.034em;
 	display: block;
 	text-transform: uppercase;
 }
-.sub-title {
+.page-header .top-logo .sub-title {
 	color: inherit;
 	display: block;
 }
-.page-header, .top-nav {
-	
+.page-header .top-nav {
 	float: right;
 	padding-top: 22px;
 }
-.page-header, .top-nav ul li {
+.page-header .top-nav ul li {
 	display: inline;
 }
-.page-header, .top-nav ul li a {
+.page-header .top-nav ul li a {
     color: #45ac9d;
     font-weight: bold;
     font-size: 22px;
@@ -779,4 +778,88 @@ h3.entry-time {
 	border: 0;
 }
 
+/* Homepage */
+
+.home {
+	background: url(img/maui-upcountry.jpg) no-repeat center 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100%;
+}
+.home .page-header {
+	display: none;
+}
+.home .main-content {
+	padding: 25px 47px 0 0;
+	width: 100%;
+	float: none;
+	overflow: hidden;
+}
+.home .content {
+	width: 550px;
+	background: #ffffff;
+	float: right;
+	padding: 20px 50px;
+}
+.home .content h1 {
+	color: #45ac9d;
+	font-family:'Economica', sans-serif;
+	font-weight:bold;
+	font-size:3rem;
+	line-height:3.25rem;
+	display: block;
+	text-transform: uppercase;
+	margin:auto;
+	padding:6% 0;
+	text-align:center;
+}
+
+.home .content p {
+	width:92%;
+	margin:0 4%;
+	padding-bottom:10%;
+	font-size:1.15rem;
+	text-align:justify;
+	letter-spacing:.001em;
+}
+.home .content p a {
+	font-weight: 700;
+	text-decoration: underline;
+	color: #3b3b3b;
+}
+.home .content .social-btns {
+	margin-bottom: 30px;
+}
+.home .content .social-btns a {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	margin-right: 5px;
+}
+.home .content .soc-icon.tw {
+	background: url(img/twitter-icon.png) no-repeat center 0;
+}
+.home .content .soc-icon.fb {
+	background: url(img/facebook-icon.png) no-repeat center 0;
+}
+.home .content .soc-icon.ln {
+	background: url(img/linkedin-icon.png) no-repeat center 0;
+}
+.home .content .soc-icon.db {
+	background: url(img/dribbble-icon.png) no-repeat center 0;
+}
+.home .btn {
+	background: #45ac9d;
+	color: #fff;
+	font: bold 1.17em/2.77 'Montserrat', 'OpenSans', Arial, sans-serif;
+	display: inline-block;
+	height: 55px;
+	min-width: 250px;
+	width: 100%;
+	padding: 0 20px;
+	text-align: center;
+	text-decoration: none;
+}
 }
