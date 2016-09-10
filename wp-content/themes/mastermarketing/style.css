@@ -156,7 +156,7 @@ body {
 body {
 	background: #fff;
 	border:0;
-	/* border-top: 6px solid #45ac9d; */
+	/* border-top: 6px solid #302CA8; */
 	color: #3b3b3b;
 	font: 17px/1.65 'OpenSans', Arial, sans-serif;
 	letter-spacing: -0.01em;
@@ -174,7 +174,7 @@ body {
 }
 /* HOME PAGE STYLES ************* */
 #mobile-btn{
-	background: #45ac9d;
+	background: #302CA8;
 	color: #fff;
 	font: bold 1.17em/2.77 'Montserrat', 'OpenSans', Arial, sans-serif;
 	display: inline-block;
@@ -190,7 +190,7 @@ body {
 .home .content h1 {
 	display:none;
 }
-p {
+.home p {
 	width:92%;
 	margin: 2% 4%;
 	padding-bottom:10%;
@@ -203,9 +203,9 @@ p {
 }
 /* HEADER STYLES ************* */
 .page-header {
-	/* border-bottom: 1px solid #bfbfbf; */
+	border-bottom: 1px solid #bfbfbf;
 	padding:15% 2%;
-	/* padding-top: 15%; */
+	/* padding-bottom: 15%; */
 	overflow: hidden;
 }
 .page-header a {
@@ -216,7 +216,7 @@ p {
 	float: none;
 }
 .page-header, .top-logo, .title {
-	color: #45ac9d;
+	color: #302CA8;
 	font-family:'Economica', sans-serif;
 	font-weight:bold;
 	font-size:3rem;
@@ -244,10 +244,21 @@ p {
 	width: 96%;
 	margin:0 2%;
 }
+h1#mobile-blog-header {
+	color:inherit;
+	font: bold 1.47em/1.4 'Montserrat', sans-serif;
+	margin-top:10%;
+}
+.main-content img {
+	width:95%;
+	height:auto;
+	padding: 10% 2.5% 5% 2.5%;
+}
 h3.entry-time {
-	color:#45ac9d;
+	color:#302CA8;
 	font-weight:bold;
 	font-size:1rem;
+	padding-top:5%;
 }
 .post-entry {
 	border-bottom: 1px solid #bfbfbf;
@@ -255,19 +266,26 @@ h3.entry-time {
 	margin-bottom: 30px;
 }
 .entry-title {
-	margin: 0.25em 0;
+	margin: 1em 0;
 	font: bold 1.47em/1.4 'Montserrat', sans-serif;
 	letter-spacing: -0.034em;
+	padding:5%;
+	border-top:1px solid #bfbfbf;
+	border-bottom:1px solid #bfbfbf;
+}
+.entry-title, .single {
+	border:0;
+	padding:3%;
 }
 .entry-title a {
 	color: inherit;
 	text-decoration: none;
 }
 .entry-title a:hover {
-	color: #45ac9d;
+	color: #5D70FF;
 }
 .entry-time {
-	color: #45ac9d;
+	color: #302CA8;
 	font-weight: 600;
 	font-size: .9rem;
 }
@@ -286,7 +304,7 @@ h3.entry-time {
 	display: block;
 }
 .entry-summary a {
-	color: #45ac9d;
+	color: #302CA8;
 	text-decoration: underline;
 	font-weight: bold;
 	padding:4% 0;
@@ -343,6 +361,9 @@ h3.entry-time {
 	content: '/';
 	padding: 0 10px;
 }
+.post-entry {
+	margin:0;
+}
 .post-entry .read-more {
 	color: #150300;
 	font-size: 0.8em;
@@ -352,13 +373,16 @@ h3.entry-time {
 	text-decoration: none;
 }
 .post-entry .read-more span {
-	color: #45ac9d; 
+	color: #302CA8; 
 }
 .post-entry .read-more:hover {
-	border-bottom: 1px solid #45ac9d;
+	border-bottom: 1px solid #302CA8;
 }
 .main-content .post-entry:last-child {
 	border-bottom: 0;
+}
+.back span{
+	margin:5%;
 }
 #sidebar img {
 	width:100%;
@@ -373,12 +397,100 @@ h3.entry-time {
 .textwidget p {
 	font-size:1.2rem;
 }
+/* SINGLE POSTS PAGE ***************** */
+.single .post-entry {
+	border-bottom: none;
+}
+.comments-area {
+	width:100%;
+	height:auto;
+	clear: both;
+	overflow: hidden;
+}
+h2.comments-title {
+	border: solid #bfbfbf;
+	border-width: 1px 0;
+	color: #150300;
+	font: 600 0.8em/49px 'OpenSans', Arial, sans-serif;
+	height: auto;
+	text-transform: uppercase;
+	margin: 10% 0;
+}
+
+.comment-list {
+	margin-bottom: 10%;
+}
+.comment-list .comment-head {
+	margin: 25px 0 10px;
+}
+.comment-list .comment {
+	font: 0.8em/2.08em 'OpenSans', Arial, sans-serif;
+	border-bottom: 1px solid #BFBFBF;
+	padding-bottom: 10%;
+}
+.comment-list .comment .comment-meta {
+	float: right;
+}
+.comment-list .comment a {
+	color: #302CA8;
+	text-decoration: none;
+}
+.comment-list .comment a:hover {
+	text-decoration: underline;
+}
+.comment-list .comment .comment-author {
+	font-weight: 600;
+}
+.comments-area .comment-reply-title {
+	color: #302CA8;
+	font: bold 1.176em 'Montserrat', 'OpenSans', Arial, sans-serif;
+	text-transform: uppercase;
+	margin-top: 5%;
+}
+.comments-area .comment-reply-title a {
+	color: #302CA8;
+}
+.comments-area .comment-reply-title a:hover {
+	text-decoration: underline;
+}
+.comments-area .comment-form p {
+	font: 0.8em/2.08em 'OpenSans', Arial, sans-serif;
+	/* padding-bottom: 23px; */
+}
+.comments-area .comment-form p a {
+	color: #302CA8;
+}
+.comments-area .comment-form p a:hover {
+	text-decoration: underline;
+}
+.comments-area .comment-form label {
+	display: block;
+	font: 600 1em 'OpenSans', Arial, sans-serif;
+	margin: 10px 0;
+}
+.comments-area .comment-form textarea {
+	height: auto;
+	width: 100%;
+	resize: none;
+	font: 1rem 'OpenSans', Arial, sans-serif;
+	padding: 2%;
+}
+.comments-area .comment-form input[type="submit"] {
+	background: #302CA8;
+	width: 206px;
+	height: 55px;
+	font: bold 1.3em/45px 'Montserrat', 'OpenSans', Arial, sans-serif;
+	color: #fff;
+	margin: 24px 0;
+	float: right;
+	border: 0;
+}
 
 /* TABLET STYLES ********************************* */
 
 @media (min-width:768px) {
  #desk-lap.btn {
-	background: #45ac9d;
+	background: #302CA8;
 	color: #fff;
 	font: bold 1.17em/2.77 'Montserrat', 'OpenSans', Arial, sans-serif;
 	display: inline-block;
@@ -418,7 +530,7 @@ h3.entry-time {
 	float: left;
 }
 .page-header .top-logo .title {
-	color: #45ac9d;
+	color: #302CA8;
 	font: bold 1.88em/1.3125 'Montserrat', 'OpenSans', Arial, sans-serif;
 	letter-spacing: -0.034em;
 	display: block;
@@ -436,7 +548,7 @@ h3.entry-time {
 	display: inline;
 }
 .page-header .top-nav ul li a {
-    color: #45ac9d;
+    color: #302CA8;
     font-weight: bold;
     font-size: 22px;
     line-height: normal;
@@ -475,10 +587,10 @@ h3.entry-time {
 	text-decoration: none;
 }
 .entry-title a:hover {
-	color: #45ac9d;
+	color: #5D70FF;
 }
 .entry-time {
-	color: #45ac9d;
+	color: #302CA8;
 	font-weight: 600;
 	font-size: 0.82em;
 }
@@ -496,7 +608,7 @@ h3.entry-time {
 	display: block;
 }
 .entry-summary a {
-	color: #45ac9d;
+	color: #302CA8;
 	text-decoration: underline;
 	font-weight: bold;
 }
@@ -561,10 +673,10 @@ h3.entry-time {
 	text-decoration: none;
 }
 .post-entry .read-more span {
-	color: #45ac9d; 
+	color: #302CA8; 
 }
 .post-entry .read-more:hover {
-	border-bottom: 1px solid #45ac9d;
+	border-bottom: 1px solid #302CA8;
 }
 .main-content .post-entry:last-child {
 	border-bottom: 0;
@@ -621,7 +733,7 @@ h3.entry-time {
 	border-left: none;
 	width: 35px;
 	height: 36px;
-	background: url('img/white-arrow-right.png') no-repeat 13px 10px #45ac9d;
+	background: url('img/white-arrow-right.png') no-repeat 13px 10px #302CA8;
 	color: #ffffff;
 	margin-left: -5px;
 	vertical-align: middle;
@@ -632,7 +744,7 @@ h3.entry-time {
 #sidebar .widget_categories h2,
 #sidebar .widget_archive h2 {
 	font: 600 14px 'Open Sans';
-	color: #45ac9d;
+	color: #302CA8;
 	margin-bottom: 20px;
 }
 #sidebar .widget_categories ul li,
@@ -666,7 +778,7 @@ h3.entry-time {
 }
 #navigation .left a,
 #navigation .right a {
-	color: #45ac9d;
+	color: #302CA8;
 	text-decoration: none;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -724,7 +836,7 @@ h3.entry-time {
 	float: right;
 }
 .comment-list .comment a {
-	color: #45ac9d;
+	color: #302CA8;
 	text-decoration: none;
 }
 .comment-list .comment a:hover {
@@ -734,13 +846,13 @@ h3.entry-time {
 	font-weight: 600;
 }
 .comments-area .comment-reply-title {
-	color: #45ac9d;
+	color: #302CA8;
 	font: bold 1.176em 'Montserrat', 'OpenSans', Arial, sans-serif;
 	text-transform: uppercase;
 	margin: 2em 0 1em;
 }
 .comments-area .comment-reply-title a {
-	color: #45ac9d;
+	color: #302CA8;
 }
 .comments-area .comment-reply-title a:hover {
 	text-decoration: underline;
@@ -750,7 +862,7 @@ h3.entry-time {
 	padding-bottom: 23px;
 }
 .comments-area .comment-form p a {
-	color: #45ac9d;
+	color: #302CA8;
 }
 .comments-area .comment-form p a:hover {
 	text-decoration: underline;
@@ -768,7 +880,7 @@ h3.entry-time {
 	padding: 5px 10px;
 }
 .comments-area .comment-form input[type="submit"] {
-	background: #45ac9d;
+	background: #302CA8;
 	width: 206px;
 	height: 55px;
 	font: bold 1.3em/45px 'Montserrat', 'OpenSans', Arial, sans-serif;
@@ -804,7 +916,7 @@ h3.entry-time {
 	padding: 20px 50px;
 }
 .home .content h1 {
-	color: #45ac9d;
+	color: #302CA8;
 	font-family:'Economica', sans-serif;
 	font-weight:bold;
 	font-size:3rem;
@@ -851,7 +963,7 @@ h3.entry-time {
 	background: url(img/dribbble-icon.png) no-repeat center 0;
 }
 .home .btn {
-	background: #45ac9d;
+	background: #302CA8;
 	color: #fff;
 	font: bold 1.17em/2.77 'Montserrat', 'OpenSans', Arial, sans-serif;
 	display: inline-block;
