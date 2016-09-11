@@ -14,7 +14,7 @@ get_header(); ?>
 	<div class="main-content single">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part('content', the_post_thumbnail(), get_post_format()); ?>
-			<div class="back"><a href="<?php echo site_url('/blog/') ?>">&larr; <span>Back to posts</span></a></div>
+			<div class="back"><a href="<?php echo site_url('/blog/') ?>"><span>&larr;  Back to posts</span></a></div>
 			<?php comments_template(); ?>
 		<?php endwhile; ?>
 	</div>
@@ -22,7 +22,7 @@ get_header(); ?>
 	<?php get_sidebar(); ?>
 	
 	<div id="navigation" class="container">
-		<div class="back"><a href="<?php echo site_url('/blog/') ?>">&larr; <span>Back to posts</span></a></div>
+		<div class="back"><a href="<?php echo site_url('/blog/') ?>"> <span>&larr;Back to posts</span></a></div>
     </div>
 </section>
 
