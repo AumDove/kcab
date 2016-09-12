@@ -161,8 +161,13 @@ body {
 	font: 17px/1.65 'OpenSans', Arial, sans-serif;
 	letter-spacing: -0.01em;
 }
-/* MOBILE FIRST STYLES ********************************* */
-/* @media (max-width:767px) { */
+footer {
+	clear:both;
+}
+/* ******************************************* */
+/* MOBILE FIRST STYLES *************************** */
+/* ******************************************* */
+
 #page {
 	width: 98%;
 	height:auto;
@@ -499,8 +504,9 @@ h2.comments-title {
 	float: right;
 	border: 0;
 }
-
+/* ******************************************* */
 /* TABLET STYLES ********************************* */
+/* ******************************************* */
 
 @media (min-width:768px) {
 	.home p {
@@ -569,13 +575,10 @@ h2.comments-title {
 		margin-bottom: 5%;
 	}
 }
-
-
-
-
+/* ******************************************* */
 /* DESKTOP MAIN STYLES ****************************/
+/* ******************************************* */
 @media (min-width:940px) {
-
 	#page {
 		max-width: 1200px;
 		margin: auto;
@@ -583,6 +586,57 @@ h2.comments-title {
 	section.single-page {
 		margin:auto;
 	}
+	/* HOMEPAGE ******************************************* */
+
+	.home {
+		background: url(img/maui-upcountry.jpg) no-repeat center 0;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		min-height: 100%;
+	}
+	.content {
+		max-width:550px;
+		/* width: 65%; */
+		height:auto;
+		background: #ffffff;
+		float: right;
+		padding: 1% 2%;
+		opacity:.7;
+		border-radius:5px;
+	}
+	.home .page-header {
+		display:none;
+	}
+	.home .content h1 {
+		color: #302CA8;
+		font-family:'Economica', sans-serif;
+		font-weight:bold;
+		font-size:3rem;
+		display: block;
+		text-transform: uppercase;
+		margin:auto;
+		padding:2% 0;
+		text-align:center;
+	}
+	.home .content p {
+		font-size:1.25rem;
+	}
+	
+	.home .main-content {
+		padding: 2% 0 0 0;
+		float: right;
+		width: 60%;
+	}
+	
+	h2.widget-title {
+		border-top: none;
+		text-transform:none;
+	}
+
+	/* BLOG styles ****************************** */
+
 	.page-header {
 		border-bottom: 1px solid #bfbfbf;
 		padding-bottom: 1%;
@@ -605,340 +659,54 @@ h2.comments-title {
 		color: inherit;
 		display: block;
 	}
-	.main-content {
-		/* padding: 55px 47px 0 0; */
-		float: left;
-		width: 60%;
+	.index-page .main-content {
+		float:left;
+		width:60%;
+			
 	}
-	
-	h2.widget-title {
-		border-top: none;
-		text-transform:none;
+	h3.entry-time {
+		padding-top:0;
 	}
-
-	/* BLOG styles */
-
-
 	.post-entry {
-		border-bottom: 1px solid #bfbfbf;
-		padding-bottom: 30px;
-		margin-bottom: 30px;
+		margin-bottom:20px;
 	}
-	.entry-title {
-		margin: 0.25em 0;
-		font: bold 1.47em/1.4 'Montserrat', sans-serif;
-		letter-spacing: -0.034em;
-	}
-	.entry-title a {
-		color: inherit;
-		text-decoration: none;
-	}
-	.entry-title a:hover {
-		color: #5D70FF;
-	}
-	.entry-time {
-		color: #302CA8;
-		font-weight: 600;
-		font-size: 0.82em;
-	}
-	.entry-summary {
-		font-size: 0.94em;
-	}
-	.entry-summary .wp-caption {
-		margin: 25px 0;
-		width: 100%;
-		border: 1px solid #bfbfbf;
-	}
-	.entry-summary .wp-caption iframe {
-		width: 100%;
-		height: 375px;
-		display: block;
-	}
-	.entry-summary a {
-		color: #302CA8;
-		text-decoration: underline;
-		font-weight: bold;
-	}
-	.entry-summary a:hover {
-		text-decoration: none;
-	}
-	.entry-summary blockquote {
-		margin: 0 47px;
-		padding: 0 14px;
-		position: relative;
-		font: 1.6em/1.45 'Montserrat', 'OpenSans', sans-serif;
-		quotes: '“ ' ' ”' ;
-	}
-	.entry-summary blockquote p {
-		margin-bottom: 0.9em;
-	}
-	.entry-summary blockquote p:before {
-		content: '“';
-		margin-left: -14px;
-		padding-right: 5px;
-	}
-	.entry-summary blockquote p:after {
-		content: '”';
-		margin-right: -14px;
-		padding-left: 5px;
-	}
-	.entry-summary blockquote footer {
-		line-height: 0.8em;
-		font-size: 0.9em;
-	}
-	.entry-summary blockquote footer:before {
-		content: '—';
-	}
-	.post-entry img {
-		max-width: 100%;
-		padding-top:2%;
-	}
-	.entry-footer .entry-terms {
-		color: #a6a6a6;
-		font-size: 0.82em;
-	}
-	.entry-footer {
-		margin-top: 1.5em;
-	}
-	.entry-footer .entry-terms a {
-		color: #3b3b3b;
-		font-weight: 600;
-		text-decoration: none;
-	}
-	.entry-footer .entry-terms a:hover {
-		text-decoration: underline;
-	}
-	.entry-footer .entry-terms + .entry-terms:before {
-		content: '/';
-		padding: 0 10px;
-	}
-	.post-entry .read-more {
-		color: #150300;
-		font-size: 0.8em;
-		font-weight: 600;
-		line-height: 2.25em;
-		text-transform: uppercase;
-		text-decoration: none;
-	}
-	.post-entry .read-more span {
-		color: #302CA8; 
-	}
-	.post-entry .read-more:hover {
-		border-bottom: 1px solid #302CA8;
-	}
-	.main-content .post-entry:last-child {
-		border-bottom: 0;
-	}
-
-
-	/* end BLOG styles */
-
-	/* sidebar */
+	/* SIDEBAR ************************************ */
 	#sidebar {
 		border-left: 1px solid #bfbfbf;
 		border-top:none;
-		padding-left:5%;
+		padding: 2% 0 5% 3%;
 		margin:auto;
 		float: left;
-		width: 28%;
+		width: 30%;
 	}
-
 	#sidebar p {
 		font: 1rem/2rem 'Open Sans', sans-serif;
 		margin-bottom: 2%;
 		padding:2%;
 	}
-	
-	#sidebar .widget_text img {
+	div.textwidget {
+		width:100%;
+	}
+	div.textwidget img {
 		width: 100%;
 		height:auto;
-		margin: auto;
+		margin:10% auto;
+		padding-top: 5%;
 		display: block;
 	}
-	#sidebar .widget_text a {
+	#sidebar .textwidget a {
 		color: #3b3b3b;
 		font-weight: 700;
 		text-decoration: underline;
 	}
+	
+	/* SINGLE POSTS PAGE ********************************** */
+		.single .main-content {
+			width:65%;
+		}
+		div.desktop.back span{
+			display:none;
+		}
 
-	/* Next / prev */
-	#navigation {
-		background: #fff;
-		border: solid #bfbfbf;
-		border-width: 1px 0;
-		clear: both;
-		font: 0.8em/4.08 'OpenSans', Arial, sans-serif;
-		overflow: hidden;
-		position: relative;
-		z-index: 1;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-	#navigation .left {
-		float: left;
-	}
-	#navigation .right {
-		float: right;
-	}
-	#navigation .left a,
-	#navigation .right a {
-		color: #302CA8;
-		text-decoration: none;
-		font-weight: 600;
-		text-transform: uppercase;
-	}
-	#navigation .left a span,
-	#navigation .right a span {
-		color: #150300;
-	}
-	#navigation .left a span {
-		padding-left: 8px;
-	}
-	#navigation .right a span {
-		padding-right: 8px;
-	}
-	#navigation .left a:hover,
-	#navigation .right a:hover {
-		text-decoration: none;
-	}
-	#navigation .left a:hover span,
-	#navigation .right a:hover span {
-		text-decoration: underline;
-	}
-	/* End next / prev */
-
-	/* single posts */
-	.single .post-entry {
-		border-bottom: none;
-	}
-	.comments-area {
-		margin-bottom: 80px;
-		clear: both;
-		overflow: hidden;
-	}
-	.comments-area .comments-title {
-		border: solid #bfbfbf;
-		border-width: 1px 0;
-		color: #150300;
-		font: 600 0.8em/49px 'OpenSans', Arial, sans-serif;
-		height: 49px;
-		text-transform: uppercase;
-		margin: 15px 0;
-	}
-	.comment-list {
-		margin-bottom: 50px;
-	}
-	.comment-list .comment-head {
-		margin: 25px 0 10px;
-	}
-	.comment-list .comment {
-		font: 0.8em/2.08em 'OpenSans', Arial, sans-serif;
-		border-bottom: 1px solid #BFBFBF;
-		padding-bottom: 23px;
-	}
-	.comment-list .comment .comment-meta {
-		float: right;
-	}
-	.comment-list .comment a {
-		color: #302CA8;
-		text-decoration: none;
-	}
-	.comment-list .comment a:hover {
-		text-decoration: underline;
-	}
-	.comment-list .comment .comment-author {
-		font-weight: 600;
-	}
-	.comments-area .comment-reply-title {
-		color: #302CA8;
-		font: bold 1.176em 'Montserrat', 'OpenSans', Arial, sans-serif;
-		text-transform: uppercase;
-		margin: 2em 0 1em;
-	}
-	.comments-area .comment-reply-title a {
-		color: #302CA8;
-	}
-	.comments-area .comment-reply-title a:hover {
-		text-decoration: underline;
-	}
-	.comments-area .comment-form p {
-		font: 0.8em/2.08em 'OpenSans', Arial, sans-serif;
-		padding-bottom: 23px;
-	}
-	.comments-area .comment-form p a {
-		color: #302CA8;
-	}
-	.comments-area .comment-form p a:hover {
-		text-decoration: underline;
-	}
-	.comments-area .comment-form label {
-		display: block;
-		font: 600 1em 'OpenSans', Arial, sans-serif;
-		margin: 10px 0;
-	}
-	.comments-area .comment-form textarea {
-		height: 180px;
-		width: 100%;
-		resize: none;
-		font: 16px 'OpenSans', Arial, sans-serif;
-		padding: 5px 10px;
-	}
-	.comments-area .comment-form input[type="submit"] {
-		background: #302CA8;
-		width: 206px;
-		height: 55px;
-		font: bold 1.3em/45px 'Montserrat', 'OpenSans', Arial, sans-serif;
-		color: #fff;
-		margin: 24px 0;
-		float: right;
-		border: 0;
-	}
-
-	/* Homepage */
-
-	.home {
-		background: url(img/maui-upcountry.jpg) no-repeat center 0;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		min-height: 100%;
-	}
-	.content {
-		opacity:.7;
-		border-radius:5px;
-	}
-	header.page-header {
-		display: none;
-	}
-	.main-content {
-		padding-top: 25px;
-		padding-right: 50px;
-		width: 100%;
-		float: none;
-		overflow: hidden;
-	}
-	.content {
-		max-width:550px;
-		/* width: 65%; */
-		height:auto;
-		background: #ffffff;
-		float: right;
-		padding: 1% 2%;
-	}
-	.home .content h1 {
-		color: #302CA8;
-		font-family:'Economica', sans-serif;
-		font-weight:bold;
-		font-size:3rem;
-		display: block;
-		text-transform: uppercase;
-		margin:auto;
-		padding:2% 0;
-		text-align:center;
-	}
-	.content p {
-		font-size:1.25rem;
-	}
 	
 }

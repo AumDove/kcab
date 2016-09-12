@@ -21,9 +21,9 @@ get_header(); ?>
 		
 	<?php get_sidebar(); ?>
 	
-	<div id="navigation" class="container">
-		<div class="back"><a href="<?php echo site_url('/blog/') ?>"> <span>&larr;Back to posts</span></a></div>
-    </div>
-</section>
+		<div class="back desktop"><a href="<?php echo site_url('/blog/') ?>"> <span>&larr;Back to posts</span></a></div>
 
-<?php get_footer(); ?>
+</section>
+<footer>
+	<?php get_footer(); ?>
+</footer>

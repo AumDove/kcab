@@ -9,7 +9,11 @@
  * @since Master Marketing 1.0
  */
 ?>
-
+	<?php if ( has_nav_menu( 'secondary' ) ) : ?>
+		<nav role="navigation" class="navigation site-navigation secondary-navigation">
+			<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
+		</nav>
+	<?php endif; ?>
 
 		</div><!-- #main -->
 	</div><!-- #page -->
