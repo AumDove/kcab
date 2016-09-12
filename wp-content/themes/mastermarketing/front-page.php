@@ -21,5 +21,6 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-
+<footer class="home-page-footer">
 <?php get_footer(); ?>
+</footer>
