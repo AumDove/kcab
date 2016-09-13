@@ -36,6 +36,6 @@ get_header(); ?>
 		</div>
 	<?php endif; ?>
 </section>
-<footer class="blog-footer">
+<footer class="page-footer">
 	<?php get_footer(); ?>
 </footer>

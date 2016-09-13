@@ -161,30 +161,51 @@ body {
 	font: 17px/1.65 'OpenSans', Arial, sans-serif;
 	letter-spacing: -0.01em;
 }
+
+img {
+	border:2.5px solid #bfbfbf;
+	border-radius:10px;
+	margin-top: 5%;
+	padding:0;
+}
 footer {
 	clear:both;
 	width:100%;
+	/* border-top:1px solid #bfbfbf; */
 }
-footer.blog-footer ul {
-	display:block;
+footer.page-footer ul {
+	display:flex;
+	width:100%;
+	height:auto;
 	margin:0 2%;
+	flex-flow:column;
+	justify-content:center;
 }
-	footer.blog-footer ul li{
+	footer.page-footer ul li{
 		display:inline;
+		border-top:2px solid #bfbfbf;
 		text-transform:uppercase;
-		padding: 1% 3%;
+		padding: 1% 5%;
 		font: bold 1.25rem/2.77 'Economica', Arial, sans-serif;
 		letter-spacing:.002rem;
 		text-align:center;
 	}
-		footer.blog-footer ul li a {
-
+		footer.page-footer a {
+			padding: 2% 0;
+			margin:auto;
+			width:100%;
 		}
-		footer.blog-footer ul li a:hover {
+		footer.page-footer ul li a:hover {
 			color:#8AEBF0;
 		}
 footer.home-page-footer {
 	display:none;
+}
+ #policy-other h2.entry-title{
+	border:none;
+	padding-bottom:30px;
+	margin:0;
+	padding-left:0;
 }
 /* ******************************************* */
 /* MOBILE FIRST STYLES *************************** */
@@ -213,6 +234,15 @@ footer.home-page-footer {
 	text-align: center;
 	text-decoration: none;
 	border-radius:5px;
+}
+#mobile-btn.btn:hover {
+	background:#8AEBF0;
+}
+#desk-lap.btn {
+	border-radius:5px;
+}
+#desk-lap.btn:hover {
+	background:#8AEBF0;
 }
 .home .content h1 {
 	display:none;
@@ -280,7 +310,7 @@ h1#mobile-blog-header {
 .main-content img {
 	width:95%;
 	height:auto;
-	padding: 10% 2.5% 5% 2.5%;
+/* 	padding: 5% 2.5% 10% 2.5%; */
 }
 h3.entry-time {
 	color:#302CA8;
@@ -288,18 +318,22 @@ h3.entry-time {
 	font-size:1rem;
 	padding-top:5%;
 }
+div.entry-meta {
+	border:none;
+}
 .post-entry {
 	border-bottom: 1px solid #bfbfbf;
 	padding-bottom: 30px;
 	margin-bottom: 30px;
 }
-.entry-title {
+h2.entry-title {
 	margin: 1em 0;
+	color:#302CA8;
 	font: bold 1.47em/1.4 'Montserrat', sans-serif;
 	letter-spacing: -0.034em;
-	padding:5%;
+	/* padding:2%;
 	border-top:1px solid #bfbfbf;
-	border-bottom:1px solid #bfbfbf;
+	border-bottom:1px solid #bfbfbf; */
 }
 .entry-title, .single {
 	border:0;
@@ -339,6 +373,7 @@ h3.entry-time {
 }
 .entry-summary a:hover {
 	text-decoration: none;
+	color:#5D70FF;
 }
 .entry-summary blockquote {
 	margin: 0 47px;
@@ -384,6 +419,7 @@ h3.entry-time {
 }
 .entry-footer .entry-terms a:hover {
 	text-decoration: underline;
+	color:#5D70FF;
 }
 .entry-footer .entry-terms + .entry-terms:before {
 	content: '/';
@@ -405,38 +441,42 @@ h3.entry-time {
 }
 .post-entry .read-more:hover {
 	border-bottom: 1px solid #302CA8;
+	color:#5D70FF;
 }
 .main-content .post-entry:last-child {
 	border-bottom: 0;
 }
 .back span a{
 	clear:both;
-	/* margin:5%; */
+
 }
 /* SIDEBAR **************************** */
-h2.widget-title {
-	font-family: 'Montserrat', 'OpenSans', sans-serif;
-	font-size: 1.25rem;
-	font-weight:bold;
-	color:#302CA8;
-	padding-top:1.5%;
-	padding-bottom: 3%;
-	text-transform:uppercase;
-	border-top:1px solid #302CA8;
-}
+
 #sidebar img {
 	width:100%;
 	height:auto;
-	margin: 3% 0;
+	margin-top: 6%;
+	border:2px solid #bfbfbf;
+	border-radius:30px;
+
+}
+#sidebar p {
+
 }
 #sidebar {
 	/* border-left: 1px solid #bfbfbf; */
+	border-top: 1px solid #bfbfbf;
 	padding:0;
 	float: left;
 	width: 96%;
 }
+h2.widget-title {
+	display:none;
+}
+
 .textwidget p {
 	font-size:1.2rem;
+		margin:3%;
 }
 #opt-in.btn {
 	background: #302CA8;
@@ -451,6 +491,9 @@ h2.widget-title {
 	text-decoration: none;
 	margin:10% 0;
 }
+	#opt-in.btn:hover {
+		background:#5D70FF;
+	}
 /* SINGLE POSTS PAGE ***************** */
 .single .post-entry {
 	border-bottom: none;
@@ -539,6 +582,7 @@ h2.comments-title {
 	float: right;
 	border: 0;
 }
+
 /* ******************************************* */
 /* TABLET STYLES ********************************* */
 /* ******************************************* */
@@ -552,6 +596,7 @@ h2.comments-title {
 		text-align: justify;
 		letter-spacing: .001em;
 	}
+	
 	.page-header {
 		border-bottom: 1px solid #bfbfbf;
 		padding:7% 2%;
@@ -606,18 +651,68 @@ h2.comments-title {
 	#mobile-btn {
 		display:none;
 	}
+	/* SIDEBAR  (TABLET)************************ */
 	#sidebar {
-		margin-bottom: 5%;
+		margin-bottom: 3%;
+		width:100%;
 	}
-	footer.blog-footer ul {
+	div.textwidget {
+		border-top: 1px solid #bfbfbf;
+
+	}
+	#sidebar img {
+		float:left;
+		width: 30%;
+		height:auto;
+		margin-top:30px;
+		margin-right: 5%;
+	}
+	#sidebar p {
+		float:left;
+		width: 60%;
+		height:auto;
+		margin-top:10px;
+		margin-left:2%;
+		padding-bottom: 10px;
+	}
+	div#tablet-sidebar {
 		border-top:1px solid #bfbfbf;
-		margin:4% 3%;	
+		clear:both;
+		margin-top:5%;
 	}
-		footer.blog-footer ul li{
+	#primary-sidebar {
+		border-top:1px solid #bfbfbf;
+		margin-top:5%;
+	}
+	/* PAGE (DEFAULT and POLICIES) STYLES ********************* */
+.main-content {
+	width:65%;
+}
+.policy-other h2.widget-title  {
+	border:none;
+}
+#sidebar {
+	border-top:none;
+}
+.policy-other h2.entry-title{
+	border:none;
+	
+}
+/* FOOTER (TABLET)******************** */
+	footer {
+			border-top:1px solid #bfbfbf;
+	}
+	footer.page-footer ul {
+	
+		margin:4% 3%;
+		display:block;		
+	}
+		footer.page-footer ul li{
+			border:none;
 			display:inline;
 			text-transform:uppercase;
 			margin-top:5%;
-			padding:3%;
+			padding:3% 2%;
 			font: bold 1.25rem/2.77 'Economica', Arial, sans-serif;
 			letter-spacing:.002rem;
 			text-align:left;
@@ -634,7 +729,7 @@ h2.comments-title {
 	section.single-page {
 		margin:auto;
 	}
-	/* HOMEPAGE ******************************************* */
+	/* HOMEPAGE (DESKTOP)******************************************* */
 
 	.home {
 		background: url(img/maui-upcountry.jpg) no-repeat center 0;
@@ -677,13 +772,7 @@ h2.comments-title {
 		float: right;
 		width: 60%;
 	}
-	
-	h2.widget-title {
-		border-top: none;
-		text-transform:none;
-	}
-
-	/* BLOG styles ****************************** */
+	/* BLOG (DESKTOP) ****************************** */
 
 	.page-header {
 		border-bottom: 1px solid #bfbfbf;
@@ -710,7 +799,6 @@ h2.comments-title {
 	.index-page .main-content {
 		float:left;
 		width:60%;
-			
 	}
 	h3.entry-time {
 		padding-top:0;
@@ -718,28 +806,48 @@ h2.comments-title {
 	.post-entry {
 		margin-bottom:20px;
 	}
-	/* SIDEBAR ************************************ */
+	/* SIDEBAR  (DESKTOP)************************************ */
 	#sidebar {
 		border-left: 1px solid #bfbfbf;
-		border-top:none;
 		padding: 2% 0 5% 3%;
 		margin:auto;
 		float: left;
 		width: 30%;
 	}
+	div.textwidget {
+		border-top: none;
+	}
+	#sidebar img {
+		clear:both;
+		width:100%;
+		height:auto;
+	}
 	#sidebar p {
+		clear:both;
+		width:100%;
 		font: 1rem/2rem 'Open Sans', sans-serif;
 		margin-bottom: 2%;
 		padding:2%;
 	}
+	h2.widget-title {
+		display:block;
+		font-family: 'Montserrat', 'OpenSans', sans-serif;
+		font-size: 1.25rem;
+		font-weight:bold;
+		color:#302CA8;
+		padding-top:1.5%;
+		padding-bottom: 3%;
+		border-top: none;
+		text-transform:none;
+}
 	div.textwidget {
 		width:100%;
 	}
 	div.textwidget img {
+		clear:both;
 		width: 100%;
 		height:auto;
 		margin:10% auto;
-		padding-top: 5%;
 		display: block;
 	}
 	#sidebar .textwidget a {
@@ -747,12 +855,20 @@ h2.comments-title {
 		font-weight: 700;
 		text-decoration: underline;
 	}
-	/* FOOTER ************************* */
-	footer.blog-footer ul {
-		margin:2% 10%;
+	/* FOOTER  (DESKTOP)************************* */
+	footer {
+
+		clear:both;
+		width:100%;
+		padding: 0 1%;
 		
 	}
-		footer.blog-footer ul li{
+	footer.page-footer ul {
+		margin:2% 7%;
+		display:block;
+		
+	}
+		footer.page-footer ul li{
 			display:inline;
 			text-transform:uppercase;
 			padding:1%;
@@ -760,11 +876,11 @@ h2.comments-title {
 			letter-spacing:.002rem;
 			text-align:center;
 		}
-			footer.blog-footer ul li {
+			footer.page-footer ul li {
 				padding:3%;
 			}
 	
-	/* SINGLE POSTS PAGE ********************************** */
+	/* SINGLE POSTS PAGE  (DESKTOP)********************************** */
 		.single .main-content {
 			width:65%;
 		}

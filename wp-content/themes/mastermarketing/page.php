@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<section class="default-page">		
+<section id="policy-other" class="default-page">		
 	<div class="main-content">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<h2 class="entry-title"><?php the_title(); ?></h2>
@@ -21,5 +21,6 @@ get_header(); ?>
 	
 	<?php get_sidebar(); ?>
 </section>
-
-<?php get_footer(); ?>
+<footer class="page-footer">
+	<?php get_footer(); ?>
+</footer>
