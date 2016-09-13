@@ -684,6 +684,9 @@ h2.comments-title {
 		border-top:1px solid #bfbfbf;
 		margin-top:5%;
 	}
+	#opt-in.btn {
+		margin:3% 0;
+	}
 	/* PAGE (DEFAULT and POLICIES) STYLES ********************* */
 .main-content {
 	width:65%;
@@ -855,6 +858,7 @@ h2.comments-title {
 		font-weight: 700;
 		text-decoration: underline;
 	}
+	
 	/* FOOTER  (DESKTOP)************************* */
 	footer {
 
