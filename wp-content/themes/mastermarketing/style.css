@@ -163,7 +163,26 @@ body {
 }
 footer {
 	clear:both;
+	width:100%;
 }
+footer.blog-footer ul {
+	display:block;
+	margin:0 2%;
+}
+	footer.blog-footer ul li{
+		display:inline;
+		text-transform:uppercase;
+		padding: 1% 3%;
+		font: bold 1.25rem/2.77 'Economica', Arial, sans-serif;
+		letter-spacing:.002rem;
+		text-align:center;
+	}
+		footer.blog-footer ul li a {
+
+		}
+		footer.blog-footer ul li a:hover {
+			color:#8AEBF0;
+		}
 footer.home-page-footer {
 	display:none;
 }
@@ -419,6 +438,19 @@ h2.widget-title {
 .textwidget p {
 	font-size:1.2rem;
 }
+#opt-in.btn {
+	background: #302CA8;
+	color: #fff;
+	font: bold 1.17em/2.77 'Montserrat', 'OpenSans', Arial, sans-serif;
+	display: inline-block;
+	height: 55px;
+	min-width: 250px;
+	width: 100%;
+	padding: 0 20px;
+	text-align: center;
+	text-decoration: none;
+	margin:10% 0;
+}
 /* SINGLE POSTS PAGE ***************** */
 .single .post-entry {
 	border-bottom: none;
@@ -577,7 +609,20 @@ h2.comments-title {
 	#sidebar {
 		margin-bottom: 5%;
 	}
-}
+	footer.blog-footer ul {
+		border-top:1px solid #bfbfbf;
+		margin:4% 3%;	
+	}
+		footer.blog-footer ul li{
+			display:inline;
+			text-transform:uppercase;
+			margin-top:5%;
+			padding:3%;
+			font: bold 1.25rem/2.77 'Economica', Arial, sans-serif;
+			letter-spacing:.002rem;
+			text-align:left;
+		}
+			
 /* ******************************************* */
 /* DESKTOP MAIN STYLES ****************************/
 /* ******************************************* */
@@ -702,6 +747,22 @@ h2.comments-title {
 		font-weight: 700;
 		text-decoration: underline;
 	}
+	/* FOOTER ************************* */
+	footer.blog-footer ul {
+		margin:2% 10%;
+		
+	}
+		footer.blog-footer ul li{
+			display:inline;
+			text-transform:uppercase;
+			padding:1%;
+			font: bold 1.25rem/2.77 'Economica', Arial, sans-serif;
+			letter-spacing:.002rem;
+			text-align:center;
+		}
+			footer.blog-footer ul li {
+				padding:3%;
+			}
 	
 	/* SINGLE POSTS PAGE ********************************** */
 		.single .main-content {

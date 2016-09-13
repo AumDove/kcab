@@ -15,4 +15,5 @@
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	</div><!-- #primary-sidebar -->
 	<?php endif; ?>
+	<a id="opt-in" class="btn" href="http://megmillerhilo.com/answers" >Get More Info</a>
 </div><!-- #secondary -->

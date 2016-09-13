@@ -32,7 +32,7 @@ function mastermarketing_widgets_init() {
 add_action( 'widgets_init', 'mastermarketing_widgets_init' );
 
 // defines custom markup for post comments
-function skillcrush_comments($comment, $args, $depth) {
+function mastermarketing_comments($comment, $args, $depth) {
 	$comment  = '<li class="comment">';
 	$comment .=	'<header class="comment-head">';
 	$comment .= '<span class="comment-author">' . get_comment_author() . '</span>';
