@@ -21,9 +21,9 @@ get_header(); ?>
 		
 	<?php get_sidebar(); ?>
 	
-		<div class="back desktop"><a href="<?php echo site_url('/blog/') ?>"> <span>&larr;Back to posts</span></a></div>
+		<div class="back desktop mobile"><a href="<?php echo site_url('/blog/') ?>"> <span>&larr;Back to posts</span></a></div>
 
 </section>
-<footer>
+<footer class="page-footer single-footer">
 	<?php get_footer(); ?>
 </footer>
