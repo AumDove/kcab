@@ -7,13 +7,14 @@
  * @since Twenty_Sixteen 1.0
  */
 ?>
-<div id="sidebar" class="policy-other>
+<div id="sidebar" class="policy-other">
 	
 
 	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
-	</div><!-- #primary-sidebar -->
+	</div>
+</div><!-- #primary-sidebar -->
 	
 	<?php endif; ?>
 	

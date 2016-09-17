@@ -448,36 +448,33 @@ h2.entry-title {
 }
 .back span a{
 	clear:both;
-
 }
 /* SIDEBAR **************************** */
-
+#sidebar {
+	border-top: 1px solid #bfbfbf;
+	padding:0;
+	float: left;
+	width: 96%;
+}
 #sidebar img {
 	width:100%;
 	height:auto;
 	margin-top: 6%;
 	border:2px solid #bfbfbf;
 	border-radius:30px;
-
 }
 #sidebar p {
+	width:96%;
+		font-size:1.2rem;
+	padding: 0 2%;
+	margin:2% auto;
+	text-align:justify;
+}
 
-}
-#sidebar {
-	/* border-left: 1px solid #bfbfbf; */
-	border-top: 1px solid #bfbfbf;
-	padding:0;
-	float: left;
-	width: 96%;
-}
 h2.widget-title {
 	display:none;
 }
 
-.textwidget p {
-	font-size:1.2rem;
-		margin:3%;
-}
 #opt-in.btn {
 	background: #302CA8;
 	color: #fff;
@@ -655,6 +652,12 @@ h2.comments-title {
 	#sidebar {
 		margin-bottom: 3%;
 		width:100%;
+		margin: 0 3%;
+	}
+	#primary-sidebar {
+		border-top:1px solid #bfbfbf;
+		margin-top:5%;
+
 	}
 	div.textwidget {
 		border-top: 1px solid #bfbfbf;
@@ -680,12 +683,9 @@ h2.comments-title {
 		clear:both;
 		margin-top:5%;
 	}
-	#primary-sidebar {
-		border-top:1px solid #bfbfbf;
-		margin-top:5%;
-	}
 	#opt-in.btn {
-		margin:3% 0;
+
+		margin:3%;
 	}
 	/* PAGE (DEFAULT and POLICIES) STYLES ********************* */
 .main-content {
@@ -702,7 +702,7 @@ h2.comments-title {
 	
 }
 /* FOOTER (TABLET)******************** */
-	footer {
+	/*footer {
 			border-top:1px solid #bfbfbf;
 	}
 	footer.page-footer ul {
@@ -832,6 +832,13 @@ h2.comments-title {
 		margin-bottom: 2%;
 		padding:2%;
 	}
+	div#tablet-sidebar {
+		border-top:none;
+	}
+	#opt-in.btn {
+		width: 100%;
+		margin:5% 0;
+	}
 	h2.widget-title {
 		display:block;
 		font-family: 'Montserrat', 'OpenSans', sans-serif;
@@ -861,18 +868,18 @@ h2.comments-title {
 	
 	/* FOOTER  (DESKTOP)************************* */
 	footer {
-
+		border-top:1px solid #bfbfbf;
 		clear:both;
 		width:100%;
 		padding: 0 1%;
-		
 	}
 	footer.page-footer ul {
-		margin:2% 7%;
+		margin:4% 3%;
 		display:block;
 		
 	}
 		footer.page-footer ul li{
+			border:none;
 			display:inline;
 			text-transform:uppercase;
 			padding:1%;
@@ -883,7 +890,22 @@ h2.comments-title {
 			footer.page-footer ul li {
 				padding:3%;
 			}
+	footer {
+
+	}
+	footer.page-footer ul {
 	
+		
+	}
+		footer.page-footer ul li{
+
+
+			margin-top:5%;
+			padding:3% 2%;
+			font: bold 1.25rem/2.77 'Economica', Arial, sans-serif;
+			letter-spacing:.002rem;
+			text-align:left;
+		}
 	/* SINGLE POSTS PAGE  (DESKTOP)********************************** */
 		.single .main-content {
 			width:65%;
