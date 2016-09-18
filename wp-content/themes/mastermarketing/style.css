@@ -261,7 +261,6 @@ footer.home-page-footer {
 .page-header {
 	border-bottom: 1px solid #bfbfbf;
 	padding:15% 2%;
-	/* padding-bottom: 15%; */
 	margin-bottom: 5%;
 	overflow: hidden;
 }
@@ -280,7 +279,6 @@ footer.home-page-footer {
 	line-height:3.25rem;
 	display: block;
 	text-transform: uppercase;
-	/* margin:auto; */
 	text-align:center;
 }
 .page-header .top-logo .sub-title {
@@ -309,7 +307,6 @@ h1#mobile-blog-header {
 .main-content img {
 	width:95%;
 	height:auto;
-/* 	padding: 5% 2.5% 10% 2.5%; */
 }
 h3.entry-time {
 	color:#302CA8;
@@ -330,9 +327,6 @@ h2.entry-title {
 	color:#302CA8;
 	font: bold 1.47em/1.4 'Montserrat', sans-serif;
 	letter-spacing: -0.034em;
-	/* padding:2%;
-	border-top:1px solid #bfbfbf;
-	border-bottom:1px solid #bfbfbf; */
 }
 .entry-title, .single {
 	border:0;
@@ -593,7 +587,7 @@ div.back.mobile span {
 /* TABLET STYLES ********************************* */
 /* ******************************************* */
 
-@media (min-width:768px) {
+@media all and (min-width:768px) {
 	.home p {
 		font-size:1.35rem;
 	}
@@ -697,7 +691,7 @@ div.back.mobile span {
 /* ******************************************* */
 /* DESKTOP MAIN STYLES ****************************/
 /* ******************************************* */
-@media (min-width:940px) {
+@media all and (min-width:940px) {
 	#page {
 		max-width: 1200px;
 		margin: auto;

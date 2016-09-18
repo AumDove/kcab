@@ -24,6 +24,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 	<?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
