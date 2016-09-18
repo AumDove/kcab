@@ -3,8 +3,8 @@
  * The template for displaying single posts
  *
  * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty_Sixteen 1.0
+ * @subpackage Master_Marketing
+ * @since Master_Marketing 1.0
  */
 
 get_header(); ?>

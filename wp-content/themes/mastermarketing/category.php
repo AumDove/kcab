@@ -14,7 +14,7 @@ get_header(); ?>
 <section class="category-page">
 	<?php if ( have_posts() ): ?>
 		<header class="page-header">
-			<h1 class="page-title"><?php printf( __( 'Posts categorized as <span>%s</span>', 'skillcrushstarter' ), single_cat_title( '', false ) ); ?></h1>
+			<h1 class="page-title"><?php printf( __( 'Posts categorized as <span>%s</span>', 'mastermarketing' ), single_cat_title( '', false ) ); ?></h1>
 		</header>
 	<?php endif; ?>
  
