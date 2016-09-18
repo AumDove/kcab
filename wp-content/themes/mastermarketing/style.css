@@ -137,6 +137,10 @@ html[xmlns] .clearfix {
     font-weight: bold;
     font-style: normal;
 }
+/* ******************************************* */
+/* MOBILE FIRST STYLES *************************** */
+/* ******************************************* */
+
 
 /* DEFAULT MAIN STYLES */
 header, footer, section, aside, time, article {
@@ -150,8 +154,9 @@ html {
 }
 html,
 body {
-	width:100%;
+	width:98%;
 	height: auto;
+	padding:0 1%;
 }
 body {
 	background: #fff;
@@ -203,18 +208,14 @@ footer.home-page-footer {
  #policy-other h2.entry-title{
 	border:none;
 	padding-bottom:30px;
-	margin:0;
-	padding-left:0;
+	margin:0 auto;
+	/* padding-left:0; */
 }
-/* ******************************************* */
-/* MOBILE FIRST STYLES *************************** */
-/* ******************************************* */
-
 #page {
 	width: 98%;
 	height:auto;
 	padding:0 1%;
-	margin: auto;
+	margin:0 auto;
 }
 #mobile-sub-title.sub-title {
 	display:none;
@@ -583,11 +584,18 @@ div.back span {
 div.back.mobile span {
 	display:none;
 }
+/* Policy / Other Pages ********************************* */
+div.policy-other .page-header .main-content {
+	width:100%;
+	margin: 0 auto;
+	padding:0 2%;
+}
+
 /* ******************************************* */
 /* TABLET STYLES ********************************* */
 /* ******************************************* */
 
-@media all and (min-width:768px) {
+@media screen and (min-width:768px) {
 	.home p {
 		font-size:1.35rem;
 	}
@@ -685,13 +693,12 @@ div.back.mobile span {
 }
 .policy-other h2.entry-title{
 	border:none;
-	
 }
 		
 /* ******************************************* */
 /* DESKTOP MAIN STYLES ****************************/
 /* ******************************************* */
-@media all and (min-width:940px) {
+@media screen and (min-width:940px) {
 	#page {
 		max-width: 1200px;
 		margin: auto;
