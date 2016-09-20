@@ -5,8 +5,8 @@ function mastermarketing_setup() {
 	add_theme_support('post-thumbnails');
 	set_post_thumbnail_size( 250, 250);
 	// Image size for single posts
-	add_image_size( 'single-post-thumbnail', 500, 180);
-
+	add_image_size( 'single-post-thumbnail' , 700, 9999 );
+	
 	// Register Menus 
 	register_nav_menus ( array (
 		'primary-menu' => __( 'Primary Menu', 'mastermarketing' ),

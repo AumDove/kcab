@@ -13,7 +13,7 @@ get_header(); ?>
 		
 	<div class="main-content single">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part('content', the_post_thumbnail(), get_post_format()); ?>
+			<?php get_template_part('content',  get_post_format() , the_post_thumbnail( 'single-post-thumbnail' ) ); ?>
 			<div class="back"><a href="<?php echo site_url('/blog/') ?>"><span>&larr;  Back to posts</span></a></div>
 			<?php comments_template(); ?>
 		<?php endwhile; ?>

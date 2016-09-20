@@ -22,7 +22,7 @@ get_header(); ?>
 		<?php if ( have_posts() ): ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 			
-				<?php get_template_part('content-blog', the_post_thumbnail(), get_post_format()); ?>
+				<?php get_template_part('content-blog', the_post_thumbnail( 'single-post-thumbnail' ), get_post_format() ); ?>
 				
 			<?php endwhile; ?>
 		<?php endif; ?>
