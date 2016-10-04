@@ -14,7 +14,7 @@
 		
 	</div>
 	<div id="tablet-sidebar">
-			<a id="opt-in" class="btn" href="http://megmillerhilo.com/answers" >Get More Info</a>
+			<a id="opt-in" class="btn" href="http://megmillerhilo.com/answers" target="_blank" >Get More Info</a>
 		</div>
 </div><!-- #primary-sidebar -->
 	
