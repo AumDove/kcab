@@ -681,6 +681,7 @@ div.policy-other .page-header .main-content {
 	section.single-page {
 		margin:auto;
 	}
+
 	/* HOMEPAGE (DESKTOP)******************************************* */
 
 	.home {
@@ -722,6 +723,7 @@ div.policy-other .page-header .main-content {
 		padding: 2% 0 0 0;
 		float: right;
 		width: 60%;
+		
 	}
 	/* BLOG (DESKTOP) ****************************** */
 
@@ -736,13 +738,20 @@ div.policy-other .page-header .main-content {
 		margin-left:0;
 		padding-left:0;
 	}	
+	.main-content{
+		width:60%;
+/* 		position:relative; */
+	}
 	/* SIDEBAR  (DESKTOP)************************************ */
-	#sidebar {
+	div#sidebar {
 		border-left: 1px solid #bfbfbf;
 		padding: 2% 3%;
+		padding-top:1%;
 		margin:auto;
-		float: left;
+		float: right;
 		width: 35%;
+		/* position:fixed;
+		left:60%; */
 	}
 	div.textwidget {
 		border-top: none;
@@ -750,16 +759,18 @@ div.policy-other .page-header .main-content {
 	}
 	#sidebar img {
 		clear:both;
-		width:100%;
+		width:60%;
+		/* max-width:100px; */
 		height:auto;
-		margin:0 auto;
+		margin:0 15%;
+		clear:both;
 	}
 	#sidebar p {
 		clear:both;
 		width:100%;
 		font: 1rem/2rem 'Open Sans', sans-serif;
-		margin-bottom: 5%;
-		padding-top:3%;
+		/* margin-bottom: 5%;
+		padding-top:3%; */
 	}
 	h2.widget-title {
 		display:block;
@@ -778,13 +789,14 @@ div.policy-other .page-header .main-content {
 		text-decoration: underline;
 	}
 	a#opt-in.btn {
-		margin-top:10%;
+		/* margin-top:10%; */
 	}
 	/* FOOTER  (DESKTOP)************************* */
 	footer {
 		border-top:1px solid #bfbfbf;
 		clear:both;
 		margin:4% 0;
+		
 	}
 	footer.page-footer ul {
 		flex-flow:row;
